@@ -64,3 +64,8 @@ input [type="checkbox"]:checked:after {
   text-align: center;
   color: #565656;
 }
+
+h1 {
+  font-family: "Roboto";
+  font-size: 32;
+}
