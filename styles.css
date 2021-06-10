@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f0e7 !important;
+  background-color: #000 !important;
+  color: rgb(255, 255, 255);
 }
 
 /* Iconography  */
@@ -19,39 +20,80 @@ body {
 
 /* Backgrounds */
 
+header {
+  font-family: "Roboto";
+  font-size: 32pt;
+  font-weight: 900;
+  text-align: right;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  color: coral;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
 #hero {
-  background-color: #f5f0e7;
+  background-color: #000;
+  color: rgb(255, 255, 255);
   border-radius: 30px;
   margin: 5px;
 }
 
+#skip {
+  color: #5881b6;
+}
 /*Checkbox */
+
+.checkmark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+#check:checked ~ .checkmark {
+  background-color: #5881b6;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  border-right: 4px solid rgb(255, 255, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(40deg);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#check:checked ~ .checkmark::after {
+  opacity: 1;
+}
 
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
-  height: 30px;
-  width: 30px;
-  background-color: #efe3cc;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
-input [type="checkbox"]:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: white;
-  font-size: 40px;
-  content: "\f00c";
-}
+/* Checklis Items
+ */
 
-input [type="checkbox"]:checked {
-  background-color: yellowgreen;
-}
-input [type="checkbox"]:checked:after {
-  display: inline-block;
+.item {
+  font-weight: 200;
+  align-self: center;
 }
 
 /* text */
