@@ -47,15 +47,21 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
     ></script>
 
+    <div>
+      <header class="borderLine">Checklist</header>
+    </div>
+
     <!-- Hero Section-->
     <div id="hero" class="jumbotron hero">
-      <h1 class="display-4">Unsure of what to bring?</h1>
+      <h1 class="jumboTitle">Unsure of what to bring?</h1>
       <p class="lead">
-        Use our checklist below to check your items before you go. Don’t forget
-        to ...
+        Use the checklist below to verify all the items you can bring before you
+        book your appointment.
       </p>
       <hr class="my-4" />
-      <a class="btn btn-lg" href="#" role="button">Skip</a>
+      <a class="btn btn-lg" id="skip" href="appointments.html" role="button"
+        >Skip</a
+      >
     </div>
 
     <!--Section with Carousel of Services -->
@@ -64,91 +70,24 @@
 
     <script src="/src/components/index.js"></script>
 
-    <form class="container-fluid m-1 mb-5 pb-3 bg-light">
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Styrofaom & Cardboard</div>
-        <img src="assets/map-icon.svg" />
+    <div class="container-fluid">
+      <div class="row m-2">
+        <div class="col- m-2">Checkbox</div>
+        <div class="col- m-2">Items Accepted</div>
+        <div class="col- ms-4 m-2">Details</div>
       </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Musical Instruments</div>
-        <img src="assets/map-icon.svg" />
+    </div>
+
+    <form class="container-fluid bg-dark">
+      <div class="container-fluid d-flex align-items-start checklist">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkmark"></label>
+        <h5 class="item">Styrofoam/ Cardboard</h5>
       </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Electronic Devices</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Document Shredding</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Bikes & Tires</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Paints/ Chemicals</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Mattresses</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Donations / Textiles</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Paper / Books</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Compost / Cooking Oil</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Metals</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Cigarette Butts</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Plastics</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Appliances</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Flat Glass</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Food Grade Glass</div>
-        <img src="assets/map-icon.svg" />
-      </div>
-      <div class="container-fluid d-flex align-items-center">
-        <input type="checkbox" class="confirmed" />
-        <div class="display-7 m-3">Misc.</div>
-        <img src="assets/map-icon.svg" />
+      <div class="container-fluid d-flex align-items-start checklist">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkmark"></label>
+        <h5 class="item">Styrofoam/ Cardboard</h5>
       </div>
     </form>
 
@@ -161,10 +100,7 @@
         justify-content-center
       "
     >
-      <h1 class="CTA">
-        Next book an appointment <br />
-        to drop off these items.
-      </h1>
+      <h1 class="CTA">Next book an appointment to drop off these items.</h1>
       <button id="cta-btn" class="btn m-5">Book Now</button>
     </div>
 
