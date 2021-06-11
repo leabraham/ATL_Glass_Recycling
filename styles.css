@@ -123,15 +123,5 @@ input[type="checkbox"] {
   color: #565656;
 }
 
-.nextSteps {
-  margin-top: 10%;
-  margin-bottom: 20%;
-}
 
-/* Space at the bottom to gaurd the Nav*/
 
-.spacer {
-  background-color: #000000;
-  height: 50px;
-  width: 100%;
-}
