@@ -1,48 +1,59 @@
 body {
-    background-color: #000;
+  background-color: #000;
 }
 
 p2 {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 header {
-    font-family: "Roboto";
-    font-size: 32pt;
-    font-weight: 900;
-    text-align: right;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 20%;
-    color: coral;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-top: none;
-    border-right: none;
-    border-left: none;
+  font-family: "Roboto";
+  font-size: 32pt;
+  font-weight: 900;
+  text-align: right;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  color: coral;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
 .hero {
-    background-color: #000;
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    margin: 10px;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  margin: 10px;
 }
 
 .gmap_canvas {
-    margin: 10%;
+  margin: 10%;
 }
-
-.bottomNav {
-    background-color: rgba(0, 0, 0);
-    text-decoration: none;
-    color: white;
-}
-
 
 /* Change Nav Text color */
 
 .text-current {
-    color: coral;
+  color: coral;
+}
+
+/* navBar styling */
+
+#mapIcon,
+#listIcon,
+#calIcon {
+  width: auto;
+  height: 50px;
+}
+
+#bgNav {
+  background-color: rgba(0, 0, 0, 0.87) !important;
+  height: 70px;
+}
+
+.nav-item {
+  height: 300px;
 }
