@@ -1,93 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="map.styles.css">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="map.styles.css" />
     <title>CHaRM Map</title>
 
-
-    <link rel="stylesheet" href="./map.styles.css">
+    <link rel="stylesheet" href="./map.styles.css" />
     <title>CHaRM Map</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Just an image -->
-    <nav class="navbar navbar-light  mt-3 topNav">
-        <a class=" navbar-brand " href="# ">
-            <img src="/assets/logo on Dark.svg " width="100 " height="70 " alt=" " />
-        </a>
+    <nav class="navbar navbar-light mt-3 topNav">
+      <a class="navbar-brand" href="# ">
+        <img
+          src="/assets/logo on Dark.svg "
+          width="100 "
+          height="70 "
+          alt=" "
+        />
+      </a>
     </nav>
 
     <div>
-        <header class="borderLine ">Map</header>
+      <header class="borderLine">Map</header>
     </div>
 
     <!-- Hero Section-->
-    <div id="hero " class="hero ">
-        <h1 class="jumboTitle ">Unsure of what to bring?</h1>
-        <p class="lead ">
-            Use the checklist below to verify all the items you can bring before you book your appointment.
-        </p>
-        <hr class="my-4 " />
-        <a class="btn btn-lg " id="skip " href="appointments.html " role="button ">Skip</a
-    >
-  </div>
+    <div id="hero " class="hero">
+      <h1 class="jumboTitle">Unsure of what to bring?</h1>
+      <p class="lead">
+        Use the checklist below to verify all the items you can bring before you
+        book your appointment.
+      </p>
+      <hr class="my-4" />
+      <a class="btn btn-lg" id="skip " href="appointments.html " role="button "
+        >Skip</a
+      >
+    </div>
 
-
-  <div class="mapouter "><div class="gmap_canvas "><iframe width="300 " height="200 " id="gmap_canvas " src="https://maps.google.com/maps?q=charm%20atlanta&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 " scrolling="no " marginheight="0
-        " marginwidth="0 "></iframe><a href="https://123movies-to.org "></a><br>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="300 "
+          height="200 "
+          id="gmap_canvas "
+          src="https://maps.google.com/maps?q=charm%20atlanta&t=&z=13&ie=UTF8&iwloc=&output=embed "
+          frameborder="0 "
+          scrolling="no "
+          marginheight="0
+        "
+          marginwidth="0 "
+        ></iframe
+        ><a href="https://123movies-to.org "></a><br />
         <style>
-            .mapouter {
-                position: relative;
-                text-align: right;
-                height: 200px;
-                width: 300px;
-            }
-        </style><a href="https://www.embedgooglemap.net ">adding a google map to your website</a>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 200px;
+            width: 300px;
+          }</style
+        ><a href="https://www.embedgooglemap.net "
+          >adding a google map to your website</a
+        >
         <style>
-            .gmap_canvas {
-                overflow: hidden;
-                background: none!important;
-                height: 200px;
-                width: 300px;
-            }
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 200px;
+            width: 300px;
+          }
         </style>
+      </div>
     </div>
-    </div>
-
-
 
     <!--Navbar Primary-->
-    <ul class="nav justify-content-center mt-4 fixed-bottom bottomNav ">
-        <li class="nav-item ">
-            <a class="nav-link active d-flex flex-column text-center text-secondary " href="# ">
-                <img id="listIcon " src="assets/list-icon.svg " alt="nav list icon "> List
-            </a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link d-flex flex-column text-center text-secondary " href="# ">
-                <img id="calIcon " src="assets/calendar-icon.svg " alt="nav list icon "> Cal
-            </a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link d-flex flex-column text-center text-current " href="# ">
-                <img id="mapIcon " src="assets/map-icon.svg " alt="nav list icon "> Map
-            </a>
-        </li>
 
+    <div class="spacer"></div>
+    <!--Navbar Primary-->
+    <ul id="bgNav" class="nav justify-content-center fixed-bottom pb-2 bg-dark">
+      <li class="nav-item">
+        <a class="nav-link active d-flex flex-column text-center" href="top">
+          <img id="listIcon" src="assets/listNav.svg" alt="nav list icon" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link d-flex flex-column text-center"
+          href="/appointments.html"
+        >
+          <img id="calIcon" src="assets/calNav.svg" alt="nav cal icon" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex flex-column text-center" href="/map.html">
+          <img id="mapIcon" src="assets/mapNavActive.svg" alt="nav list icon" />
+        </a>
+      </li>
     </ul>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+      crossorigin="anonymous "
+    ></script>
+  </body>
 </html>
