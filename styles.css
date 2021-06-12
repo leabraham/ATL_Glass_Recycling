@@ -1,127 +1,140 @@
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #000 !important;
-  color: rgb(255, 255, 255);
-  max-width: 375px;
-  max-width: 812px;
+    font-family: "Roboto", sans-serif;
+    background-color: #000 !important;
+    color: rgb(255, 255, 255);
+    max-width: 375px;
+    max-width: 812px;
 }
 
+
 /* Iconography  */
+
 #mapIcon,
 #calIcon,
 #listIcon {
-  width: 40px;
+    width: 40px;
 }
+
 
 /* Buttons */
 
 #cta-btn {
-  align-self: center;
-  background-color: #f0c472;
-  margin-bottom: 50px;
+    align-self: center;
+    background-color: #f0c472;
 }
+
 
 /* Backgrounds */
 
 header {
-  font-family: "Roboto";
-  font-size: 32pt;
-  font-weight: 900;
-  text-align: right;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 20%;
-  color: coral;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-left: none;
+    font-family: "Roboto";
+    font-size: 32pt;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    color: coral;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+jumbotron {
+    background-color: none;
 }
 
 #hero {
-  background-color: #000;
-  color: rgb(255, 255, 255);
-  border-radius: 30px;
-  margin: 5px;
+    background-color: #000 !important;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 5px;
 }
 
 #skip {
-  color: #5881b6;
+    color: #5881b6;
 }
+
+
 /*Checkbox */
+
 
 /* testing some new checkboxes */
 
 label {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%;
-  background-color: #231f20;
-  border-radius: 10px;
-  padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    background-color: #231f20;
+    border-radius: 10px;
+    padding: 10px;
 }
-.checkbox__input {
-  input {
-    opacity: 0;
-    width: 1em;
-    height: 1em;
-  }
-}
-.checkbox__input {
-  display: grid;
-  grid-template-areas: "checkbox";
 
-  > * {
-    grid-area: checkbox;
-  }
+.checkbox__input {
+    input {
+        opacity: 0;
+        width: 1em;
+        height: 1em;
+    }
+}
+
+.checkbox__input {
+    display: grid;
+    grid-template-areas: "checkbox";
+    >* {
+        grid-area: checkbox;
+    }
 }
 
 .checkbox__control {
-  display: inline-grid;
-  width: 1em;
-  height: 1em;
-  border-radius: 0.25em;
-  border: 2px solid currentColor;
+    display: inline-grid;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.25em;
+    border: 2px solid currentColor;
 }
+
 .checkbox {
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-gap: 0.5em;
-  font-size: 2rem;
-  color: var(--color);
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em;
+    font-size: 2rem;
+    color: var(--color);
 }
+
 .checkbox__control svg {
-  transition: transform 0.1s ease-in 25ms;
-  transform: scale(0);
-  transform-origin: bottom left;
+    transition: transform 0.1s ease-in 25ms;
+    transform: scale(0);
+    transform-origin: bottom left;
 }
-.checkbox__input input:checked + .checkbox__control svg {
-  transform: scale(1);
+
+.checkbox__input input:checked+.checkbox__control svg {
+    transform: scale(1);
 }
 
 input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
+
 
 /* Checklist Items
  */
 
 .item {
-  font-weight: 200;
-  align-self: center;
-  font-size: 16pt;
+    font-weight: 200;
+    align-self: center;
+    font-size: 16pt;
 }
+
 
 /* text */
 
 .CTA {
-  font-size: 18pt;
-  margin-left: 10px;
-  text-align: center;
-  color: #565656;
+    font-size: 18pt;
+    margin-left: 10px;
+    text-align: center;
+    color: #565656;
 }
-
-
-
