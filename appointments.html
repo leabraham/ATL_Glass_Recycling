@@ -54,7 +54,20 @@
     <title>CHaRM Book Appointments</title>
   </head>
   <body>
-    <h3 class="title">Book an Appointment</h3>
+    <nav class="navbar navbar-light mt-3 topNav">
+      <a class="navbar-brand" href="# ">
+        <img
+          src="/assets/logo on Dark.svg "
+          width="100 "
+          height="70 "
+          alt=" "
+        />
+      </a>
+    </nav>
+
+    <div>
+      <header class="borderLine">Book an Appointment</header>
+    </div>
 
     <!-- calendar -->
     <div class="calendar">
@@ -123,7 +136,18 @@
     <!-- calendar -->
 
     <!-- Appointment Times -->
-    <button type="button" class="btn btn-primary btn-lg">9:00 AM</button>
+    <div class="dropdown drpdwn-time">
+      <button class="btn btn-time btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Available Times
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item text-center time-txt" type="button">9:00 AM</button>
+        <div class="dropdown-divider dvdr-color"></div>
+        <button class="dropdown-item text-center time-txt" type="button">11:00 AM</button>
+        <div class="dropdown-divider dvdr-color"></div>
+        <button class="dropdown-item text-center time-txt" type="button">1:00 PM</button>
+      </div>
+    </div>
 
     <!--Navbar Primary-->
 
@@ -152,6 +176,7 @@
         </a>
       </li>
     </ul>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
