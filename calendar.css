@@ -5,11 +5,6 @@ body {
   max-height: 812px;
 }
 
-.title {
-  color: white;
-  text-align: center;
-}
-
 .calendar {
   width: 350px;
   margin: 50px auto 0;
@@ -92,7 +87,7 @@ body {
 }
 
 .bold-days {
-  color: white;
+  color: #D1D1D1;
 }
 
 .highlight-day {
@@ -117,21 +112,33 @@ body {
   color: #111;
 }
 
-.btn-primary {
-  background-color: #f9a26c !important;
-  border-color: white !important;
+.drpdwn-time {
+  height: 400px;
+  padding-left: 6.5rem;
+  padding-top: 4rem;
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: #f9a26c !important;
+.btn-time {
+  background-color: #FB8B4B;
+  border-color: white;
 }
 
-.btn-time-color {
-  background-color: #f9a26c;
-  color: white;
-  border-color: #f9a26c;
+.btn-time:focus {
+  background-color: #F47329 !important;
+  border-color: #f9a26c !important;
+  box-shadow: 0 0 0 0.2rem black !important;
+}
+
+.btn-time:hover {
+  background-color: #F47329 !important;
+}
+
+.dvdr-color {
+  border-top: 1px solid gray;
+}
+
+.time-txt:hover {
+  background-color: #E2D6BF;
 }
 
 /* Navbar styling */
