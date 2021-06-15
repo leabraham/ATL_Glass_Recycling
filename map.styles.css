@@ -6,18 +6,14 @@ body {
 
 .lead {
     color: white;
-    font-size: medium;
+    font-size: large;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-.lead2 {
-    color: red;
-    padding-bottom: 100px;
+    margin-left: 5%;
 }
 
 p2.lead {
-    color: #F9A26C;
+    color: white;
     margin-bottom: 5%;
     padding-bottom: 10%;
     text-decoration: underline;
@@ -50,12 +46,13 @@ header {
 h1.jumboTitle {
     color: #F9A26C;
     font-size: xx-large;
+    margin-left: 5%;
 }
 
 h2.jumboTitle {
     color: white;
     font-size: x-large;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
 
@@ -103,15 +100,17 @@ h2.jumboTitle {
 
 button {
     padding-top: 20%;
+    padding-bottom: 20%;
 }
 
-button.btn.btn-outline-light {
-    color: white;
+button.btn.btn-light {
+    color: black;
     align-items: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-left: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 20%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 img.rounded.float-left {
@@ -121,15 +120,20 @@ img.rounded.float-left {
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .list-group {
     padding-bottom: 150px;
+    padding-top: 10px;
+    padding-left: 30%;
+    padding-right: 10px;
 }
 
 a.list-group-item {
-    margin-left: 10%;
-    margin-right: 5%;
+    margin-left: 20%;
+    margin-right: 10%;
     padding-left: 10%;
     padding-right: 10%;
     width: 300px;
@@ -140,4 +144,12 @@ a.list-group-item.list-group-item-action.active {
     color: white;
     background-color: black;
     border-color: white;
+}
+
+img {
+    max-width: 325px;
+    max-height: 325px;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
