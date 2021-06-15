@@ -1,0 +1,160 @@
+body {
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+  max-width: 375px;
+  max-height: 812px;
+}
+
+.calendar {
+  width: 350px;
+  margin: 50px auto 0;
+}
+
+.calendar__month {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+}
+
+.cal-month__previous,
+.cal-month__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+}
+
+.cal-month__previous:hover,
+.cal-month__next:hover {
+  background-color: #42a5f5;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  font-weight: 800;
+  color: #111;
+}
+
+.cal-month__next {
+  right: 0;
+}
+
+.cal-month__current {
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.cal-head__day,
+.cal-body__day {
+  display: inline-block;
+  width: 45px;
+  height: 50px;
+}
+
+.cal-body__week,
+.calendar__head {
+  display: block;
+  height: 50px;
+  width: 350px;
+}
+
+.calendar__head {
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  color: #f9a26c;
+}
+
+.calendar__head:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f9a26c;
+}
+
+.cal-body__day {
+  color: #777;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bold-days {
+  color: #D1D1D1;
+}
+
+.highlight-day {
+  color: #f9a26c;
+  background: rgba(249, 249, 249, 0.2);
+  border-radius: 2rem;
+}
+
+.cal-day__month--current {
+  color: #e1e1e1;
+}
+
+.cal-day__day--today {
+  font-weight: 800;
+  color: #2196f3;
+}
+
+.cal-day__day--selected {
+  background-color: #2196f3;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  color: #111;
+}
+
+.drpdwn-time {
+  height: 400px;
+  padding-left: 6.5rem;
+  padding-top: 4rem;
+}
+
+.btn-time {
+  background-color: #FB8B4B;
+  border-color: white;
+}
+
+.btn-time:focus {
+  background-color: #F47329 !important;
+  border-color: #f9a26c !important;
+  box-shadow: 0 0 0 0.2rem black !important;
+}
+
+.btn-time:hover {
+  background-color: #F47329 !important;
+}
+
+.dvdr-color {
+  border-top: 1px solid gray;
+}
+
+.time-txt:hover {
+  background-color: #E2D6BF;
+}
+
+/* Navbar styling */
+
+#mapIcon,
+#listIcon,
+#calIcon {
+  width: auto;
+  height: 50px;
+}
+
+#bgNav {
+  background-color: rgba(0, 0, 0, 0.87) !important;
+  height: 70px;
+}
+
+.nav-item {
+  height: 300px;
+}

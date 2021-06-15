@@ -69,7 +69,14 @@ h2.jumboTitle {
 }
 
 
-/* Change Nav Text color */
+/* navBar styling */
+
+#mapIcon,
+#listIcon,
+#calIcon {
+    width: auto;
+    height: 50px;
+}
 
 .text-current {
     color: #F9A26C;
