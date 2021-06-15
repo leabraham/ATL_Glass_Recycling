@@ -1,59 +1,143 @@
 body {
-  background-color: #000;
+    background-color: #000;
+    max-width: 375px;
+    max-height: 2000px;
 }
 
-p2 {
-  color: white;
-  text-decoration: underline;
+.lead {
+    color: white;
+    font-size: medium;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lead2 {
+    color: red;
+    padding-bottom: 100px;
+}
+
+p2.lead {
+    color: #F9A26C;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+    text-decoration: underline;
 }
 
 header {
-  font-family: "Roboto";
-  font-size: 32pt;
-  font-weight: 900;
-  text-align: right;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 20%;
-  color: coral;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-top: none;
-  border-right: none;
-  border-left: none;
+    font-family: "Roboto";
+    font-size: 32pt;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: #F9A26C;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 .hero {
-  background-color: #000;
-  color: rgb(255, 255, 255);
-  border-radius: 30px;
-  margin: 10px;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1.jumboTitle {
+    color: #F9A26C;
+    font-size: xx-large;
+}
+
+h2.jumboTitle {
+    color: white;
+    font-size: x-large;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .gmap_canvas {
-  margin: 10%;
+    margin: 10%;
+    padding-right: 30%;
 }
 
-/* Change Nav Text color */
-
-.text-current {
-  color: coral;
+.mapouter {
+    margin-bottom: 10%;
 }
+
 
 /* navBar styling */
 
 #mapIcon,
 #listIcon,
 #calIcon {
-  width: auto;
-  height: 50px;
+    width: auto;
+    height: 50px;
+}
+
+.text-current {
+    color: #F9A26C;
+}
+
+
+/* navBar styling */
+
+#mapIcon,
+#listIcon,
+#calIcon {
+    width: auto;
+    height: 50px;
 }
 
 #bgNav {
-  background-color: rgba(0, 0, 0, 0.87) !important;
-  height: 70px;
+    background-color: rgba(0, 0, 0, 0.87) !important;
+    height: 70px;
 }
 
 .nav-item {
-  height: 300px;
+    height: 300px;
+}
+
+button {
+    padding-top: 20%;
+}
+
+button.btn.btn-outline-light {
+    color: white;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img.rounded.float-left {
+    height: 220px;
+    width: 320px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.list-group {
+    padding-bottom: 150px;
+}
+
+a.list-group-item {
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 300px;
+    color: black;
+}
+
+a.list-group-item.list-group-item-action.active {
+    color: white;
+    background-color: black;
+    border-color: white;
 }
